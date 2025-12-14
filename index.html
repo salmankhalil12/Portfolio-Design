@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salman Khalil — Frontend Developer</title>
+  <meta name="description" content="Frontend Developer specializing in React, Next.js, Tailwind CSS. I build fast, responsive, and accessible web interfaces that convert.">
+  <link rel="canonical" href="https://your-domain.com/">
+  <meta name="theme-color" content="#7c3aed">
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <!-- Animated background -->
+  <div class="bg-anim" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- FIXED HEADER -->
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Salman — Home">Salman<span class="dot">.</span></a>
+
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
+        <i class='bx bx-menu'></i>
+      </button>
+      
+
+      <nav id="primary-navigation" class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <!-- <a class="btn btn-sm btn-ghost" href="https://www.upwork.com/freelancers/your-upwork-id" target="_blank" rel="noopener">Upwork</a> -->
+          <!-- <a class="btn btn-sm btn-primary" href="https://www.fiverr.com/your-fiverr-handle" target="_blank" rel="noopener">Fiverr</a> -->
+        </div>
+      </nav>
+    </div>
+    <div class="progress" id="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Hi, I’m</p>
+          <h1 class="hero-title">Salman Khalil</h1>
+          <p class="hero-subtitle">
+            I’m a <span id="typed-roles" data-roles='["Frontend Developer","React / Next.js Developer","UI-focused Engineer","Tailwind CSS Specialist"]'>Frontend Developer</span>
+          </p>
+
+          <p class="hero-description">
+            I build modern, responsive, and high-performance websites with clean UI and smooth UX.
+            Specialized in HTML, CSS, JavaScript, React, Next.js, and Tailwind CSS.
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#portfolio">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Hire Me</a>
+            <a class="btn btn-outline" href="assets/Salman_Khalil.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+
+          <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100080410330297" target="_blank" rel="noopener" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+            <a href="https://github.com/salmankhalil12" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/salman-khalil-a3098a25a/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visuals" aria-hidden="true">
+          <div class="profile-photo-wrap">
+            <img class="profile-photo" src="images/Salman.png" alt="Portrait of Salman Khalil — Frontend Developer" loading="eager" width="480" height="480">
+            <span class="ring ring-1"></span>
+            <span class="ring ring-2"></span>
+          </div>
+          <div class="visual-decor"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <img src="images/Salman.png" alt="Salman — Frontend Developer" loading="lazy" width="480" height="480">
+        </div>
+
+        <div class="about-content">
+          <h2 class="section-title">About <span>Me</span></h2>
+          <h3 class="subtitle">Frontend Developer</h3>
+          <p>
+            I’m a dedicated Frontend Developer focused on building modern, responsive interfaces.
+            My toolset includes HTML5, CSS3, JavaScript (ES6+), React, Next.js, Tailwind CSS, and Bootstrap.
+            I build fast and accessible websites for startups, small businesses and agencies.
+          </p>
+
+          <ul class="skill-list">
+            <li>HTML5 & Semantic Markup</li>
+            <li>CSS3, Flexbox, Grid & Responsive Design</li>
+            <li>JavaScript (ES6+), DOM</li>
+            <li>React & Next.js (SSR / SSG)</li>
+            <li>Tailwind CSS & Utility-First Styling</li>
+            <li>Version Control (Git & GitHub)</li>
+          </ul>
+
+          <div class="about-cta">
+            <a class="btn btn-primary" href="#portfolio">See My Work</a>
+            <a class="btn btn-ghost" href="mailto:your-email@example.com">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="container">
+        <h2 class="section-title">Services <span>I Offer</span></h2>
+        <p class="section-lead">Frontend development focused on performance, accessibility, and modern UI.</p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <i class='bx bx-code-alt service-icon'></i>
+            <h3>Landing Pages</h3>
+            <p>Fast, responsive and conversion-focused landing pages using modern best practices.</p>
+          </article>
+
+          <article class="service-card">
+            <i class='bx bx-paint service-icon'></i>
+            <h3>UI / Web Design</h3>
+            <p>Pixel-perfect UI, modern layouts and responsive designs that look great on all devices.</p>
+          </article>
+
+          <article class="service-card">
+            <i class='bx bx-brush-alt service-icon'></i>
+            <h3>Figma → Code</h3>
+            <p>Convert Figma or PSD designs to clean, maintainable HTML/CSS/React components.</p>
+          </article>
+
+        <article class="service-card">
+            <i class='bx bx-bug-alt service-icon'></i>
+            <h3>Fixes & Improvements</h3>
+            <p>Quick fixes: responsive issues, layout bugs, Tailwind/CSS adjustments, performance tuning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container">
+        <h2 class="section-title">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-grid">
+          <article class="project-card">
+            <img src="images/Salman.png" alt="Wimbledon Smiles Dental — landing page" class="project-thumb" loading="lazy" width="640" height="420">
+            <div class="project-body">
+              <h4>Wimbledon Smiles Dental</h4>
+              <p class="project-tech">HTML · CSS · JavaScript</p>
+              <p class="project-desc">Responsive landing page for dental clinic — clean layout and mobile-first design.</p>
+              <div class="project-actions">
+                <a href="https://salmankhalil12.github.io/Wimbledom-Smiles/" target="_blank" rel="noopener" class="btn btn-sm">Live Demo</a>
+                <a href="https://github.com/salmankhalil12/Wimbledom-Smiles" target="_blank" rel="noopener" class="btn btn-sm btn-outline">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/Salman.png" alt="Adam Usman Security — website template" class="project-thumb" loading="lazy" width="640" height="420">
+            <div class="project-body">
+              <h4>Adam Usman Security</h4>
+              <p class="project-tech">HTML · CSS · JavaScript</p>
+              <p class="project-desc">Security services website template with clear services and contact CTA.</p>
+              <div class="project-actions">
+                <a href="https://salmankhalil12.github.io/Adam_Usman_Security/" target="_blank" rel="noopener" class="btn btn-sm">Live Demo</a>
+                <a href="https://github.com/salmankhalil12/Adam_Usman_Security" target="_blank" rel="noopener" class="btn btn-sm btn-outline">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="portfolio-more">
+          <a class="btn btn-primary" href="https://github.com/salmankhalil12" target="_blank" rel="noopener">See more on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 class="section-title">Contact <span>Me</span></h2>
+          <p class="section-lead">Available for freelance frontend projects — open to remote and fixed-price work.</p>
+
+          <ul class="contact-list">
+            <li><i class='bx bx-envelope'></i> <a href="mailto:salmandeveloper501@gmail.com">salmandeveloper501@gmail.com</a></li>
+            <li><i class='bx bx-phone'></i> <a href="tel:+923174742653">+92 317 4742653</a></li>
+            <li><i class='bx bx-location-plus'></i> Pakistan</li>
+          </ul>
+
+          <div class="contact-social">
+            <a href="https://github.com/salmankhalil12" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/salman-khalil-a3098a25a/" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.upwork.com/freelancers/your-upwork-id" target="_blank" rel="noopener"><i class='bx bx-link-external'></i></a>
+            <a href="https://www.fiverr.com/your-fiverr-handle" target="_blank" rel="noopener"><i class='bx bx-link-external'></i></a>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form" onsubmit="handleContactSubmit(event)" novalidate>
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="Full name" autocomplete="name" required>
+            <input type="email" id="email" name="email" placeholder="Email address" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <input type="tel" id="phone" name="phone" placeholder="Mobile number" autocomplete="tel">
+          </div>
+          <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="reset" class="btn btn-ghost btn-ghost1">Reset</button>
+          </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Salman Khalil — All Rights Reserved.</p>
+      <a class="back-to-top" href="#home" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="/js/app.js" defer></script>
+</body>
+</html>
