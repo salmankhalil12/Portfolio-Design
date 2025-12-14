@@ -1,3 +1,27 @@
+// email js 
+ (function(){
+    emailjs.init("5IxOZ3-sQwMENotMt"); 
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    emailjs.send("service_a1pqgwm", "template_wxafusc", {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      contactNum: document.getElementById("contactNum").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value
+    })
+    .then(function(){
+      alert("Message sent successfully!");
+      document.getElementById("contact-form").reset();
+    }, function(error){
+      alert("Failed to send message");
+      console.log(error);
+    });
+  });
+
 // Helpers
 const $ = (s, ctx=document) => ctx.querySelector(s);
 const $$ = (s, ctx=document) => Array.from(ctx.querySelectorAll(s));
