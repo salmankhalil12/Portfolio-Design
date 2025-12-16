@@ -1008,19 +1008,11 @@ a {
   min-height: 64px;
 }
 
-.logo {
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  font-size: 1.4rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+.logo img{
+  width: 140px;
+  height: 100%;
+  object-fit: cover;
 }
-
-.logo .dot {
-  color: var(--brand);
-}
-
 .menu-toggle {
   display: none;
   border: 1px solid var(--border);
