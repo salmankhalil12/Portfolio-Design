@@ -1009,9 +1009,10 @@ a {
 }
 
 .logo img{
-  width: 140px;
-  height: 100%;
-  object-fit: cover;
+  width: 80px;
+  border-radius: 20%;
+  height: 55px;
+  object-fit: inherit;
 }
 .menu-toggle {
   display: none;
